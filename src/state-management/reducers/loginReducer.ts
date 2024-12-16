@@ -5,7 +5,7 @@ interface Login {
 interface Logout {
   type: "LOGOUT";
 }
-type LogAction = Login | Logout;
+export type LogAction = Login | Logout;
 
 const loginReducer = (loginStatus: string, action: LogAction) => {
   switch (action.type) {
